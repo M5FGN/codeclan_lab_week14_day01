@@ -9,9 +9,15 @@ const Whiskey = ({whiskey}) => {
 
     const url = "/pirates/" + pirate.id;
 
-    return (<>
+    return (
+    <>
     <Link to = {url} className='name'>
-        {whiskey}
+        {whiskey.name}
     </Link>
-
+    <p>Year: {whiskey.year}</p>
+    <p>Age: {whiskey.age}</p>
+</>
+    )
 }
+ 
+export default Whiskey;
